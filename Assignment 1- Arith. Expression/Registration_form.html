@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <style>
+            *{ box-sizing: border-box;}
+            .form_box{
+                    padding: 10px 100px 50px 100px;
+                   border: 2px solid black;
+                   background-color: #f2f2f2;
+                   border-radius: 10px  ;
+            }
+            .r-align{
+                float: right;
+            }
+            input{
+                border-radius: 4px;
+                padding: 8px;
+                border: 1px solid black;    
+                background-color: #3366ff;
+                color: white;
+            }
+            textarea{
+                border-radius: 4px;
+                padding: 8px;
+                border: 1px solid black;    
+                background-color: #3366ff;
+                color: white;
+            }
+            ::placeholder{
+                color: seashell;
+            }
+            button{
+                background-color: #0fc300; 
+                color: white; 
+                padding: 5px 20px 5px 20px; 
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body style="padding-left: 250px; padding-right: 250px; ">
+        <div style=" background-color: blue; padding: 8px; border-radius:20px;">
+                <h1 style="text-align: center; font-weight: bold; color: white; ">Student Registration Form</h1>
+        </div><br>
+        <form class="form_box">
+            <br><br>
+            <div>
+                <label>First Name:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="Abhishek" type="text">
+            </div><br><br>
+                        
+            <div>
+                <label>Last Name:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="Patil" type="text">
+            </div><br><br>
+                        
+            <div >
+                <label>E-mail:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="abc123@gmail.com" type="email">
+            </div><br><br>
+                        
+            <div>
+                <label>Mobile Number:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="9307489954" type="number">
+            </div><br><br>
+                        
+            <div>
+                <label >Gender  </label>
+                <input type="radio" name="gender" >
+                <label>Male  </label>
+                <input type="radio" name="gender">
+                <label >Female  </label>
+            </div><br><br>
+                        
+            <div>
+                <label>Date of birth:  </label>
+                <input style="float: initial;" type="date">
+            </div><br><br>
+                        
+            <div>
+                <label>Address:  </label>
+                <textarea class="r-align" style="width: 400px;" placeholder="Address"  rows="7"></textarea><br><br>
+            </div><br><br><br><br><br><br>
+                     
+            <div>
+                <label>City:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="Kolhapur" type="text"><br><br>
+            </div><br><br>
+            
+            <div>
+                <label>Area PIN:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="416204" type="number"><br><br>
+            </div><br><br>
+                        
+            <div>
+                <label>State:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="Maharashtra" type="text"><br><br>
+            </div><br><br>
+                        
+            <div >
+                <label >Qualification:  </label>
+                <select >
+                            <option>SSC</option>
+                            <option>Diploma</option>
+                            <option>BE</option>
+                            <option>Phd</option>
+                    </select>
+            </div><br><br>
+                        
+            <div >
+                <label>Specialization:  </label>
+                    <div>
+                    <input type="checkbox"><label>Computer Science</label><br>
+                    <input type="checkbox"><label>Information Technology</label><br>
+                    <input type="checkbox"><label>Computer Architecture</label><br>
+                    <input type="checkbox"><label>Tele Communication</label><br>
+                    </div>
+            </div><br><br>
+            
+            <div>
+                <label>Password:  </label>
+                <input class="r-align" style="width: 400px;" placeholder="Abc@123" type="password"><br><br>
+            </div>
+            <br><br>
+                        
+            <button type="submit">Submit</button>
+                
+        </form>
+        
+        
+    </body>
+</html>

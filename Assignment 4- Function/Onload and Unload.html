@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Onload and Unload</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+        <script language="javascript" >
+             function start()
+             {
+                 alert("Welcome Abhishek!");
+             }
+             function end()
+             {
+                 alert("Visit Again!");
+             }
+        </script>
+    </head>
+    <body onload="start()" onunload="end()">
+        <h1>Demonstrating use of Onload and Unload.</h1>
+    </body>
+</html>

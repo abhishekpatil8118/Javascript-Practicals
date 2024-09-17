@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator using Prompt</h1>
+        <div class="box">
+            <script language="javascript" >
+                var a, b, e;
+                a = window.prompt("Enter First number:");
+                e = window.prompt("Enter Operator:");
+                b = window.prompt("Enter Second number:");
+                
+                a = parseInt(a);
+                b = parseInt(b);
+                
+                switch(e)
+                {
+                    case "+" :
+                        document.write("Addition is "+(a+b));
+                        break;
+                    
+                    case "-" :
+                        document.write("Substrication is "+(a-b));
+                        break;
+                        
+                    case "*" :
+                        document.write("Multiplication is "+(a*b));
+                        break;
+                        
+                    case "/" :
+                        document.write("Division is "+(a/b));
+                        break;
+                }
+            </script>
+        </div>
+    </body>
+</html>

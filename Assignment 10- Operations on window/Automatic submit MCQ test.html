@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Automatic submit MCQ Tset.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript" >
+            function display()
+            {
+                document.forms.form1.submit();
+            }
+            function tout()
+            {
+                setTimeout(display,10000);
+            }
+        </script>
+    </head>
+    <body onload="tout()">
+        <h1>Test will submit automatically in 2 minutes.</h1>
+        <form name="form1" action="abhi.php" method="POST">
+            <b>Q1. By default, documents print in _______ mode.</b><br>
+            <input type="radio" name="q1">A) Lanscape<br>
+            <input type="radio" name="q1">B) Portrait<br>
+            <input type="radio" name="q1">C) Page Setup<br>
+            <input type="radio" name="q1">D) Print View<br><br><br>
+            
+            <b>Q2. Google is a ______ .</b><br>
+            <input type="radio" name="q2">A) Directory of images<br>
+            <input type="radio" name="q2">B) Browser<br>
+            <input type="radio" name="q2">C) Search Engine<br>
+            <input type="radio" name="q2">D) Chat service on web<br><br><br>
+            
+            <b>Q3. www stands for _____.</b><br>
+            <input type="radio" name="q3">A) World wide ware<br>
+            <input type="radio" name="q3">B) World wide web<br>
+            <input type="radio" name="q3">C) World wide wait<br>
+            <input type="radio" name="q3">D) World wide war<br><br><br>
+            
+            <input type="submit" value="Submit test.">
+        </form>
+    </body>
+</html>

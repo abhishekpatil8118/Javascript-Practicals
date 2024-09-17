@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Slideshow</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript" >
+            b = new Array('Car1.jpg','Car2.jpg','Car3.jpg');
+            img=0;
+             function start(num)
+             {
+                  img=img+num;
+                  if(img>b.length-1)
+                  {
+                      img=0;
+                  }
+                  if(img<0)
+                  {
+                      img=b.length-1;
+                  }
+                  document.image.src=b[img];
+             }
+        </script>    
+    </head>
+    <body>
+        <h1>Slideshow.</h1>
+    <center>
+        <img src="Car1.jpg" name="image"/><br><br>
+        <input type="button" value="Previous" name="previous" onclick="start(-1)"/>
+        <input type="button" value="Next" name="next" onclick="start(1)"/>
+    </center>
+    </body>
+</html>

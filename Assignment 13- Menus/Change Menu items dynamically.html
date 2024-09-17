@@ -1,0 +1,49 @@
+<html>
+    <head> <title>Dynamic Menu</title>
+    <script language="javascript">
+        MAHA=new Array('Kolhapur','Sangli','Pune','Satara');
+        GUJ=new Array('Kachchh','Rajkot','Surat');
+        KAR=new Array('asas','sas','Pqweune','eweqwe');
+    function function1(value1)
+    {
+        st=value1.value;
+        if(st=='MH')
+        {
+            for(i=1;i<MAHA.length;i++)
+            {
+                document.forms.form1.dist.options[i]=new Option(MAHA[i-1]);
+            }
+        }
+        if(st=='GA')
+        {
+            for(i=1;i<MAHA.length;i++)
+            {
+                document.forms.form1.dist.options[i]=new Option(GUJ[i-1]);
+            }
+        }
+        if(st=='KN')
+        {
+            for(i=1;i<MAHA.length;i++)
+            {
+                document.forms.form1.dist.options[i]=new Option(KAR[i-1]);
+            }
+        }
+    }
+    </script>
+    </head>
+<body>
+    <h1 style="color: blue; text-align: center;">Dynamic Menu.</h1>
+    <form name="form1">
+        Select State :<br>
+        <select name="state" id="state" onchange="function1(this)">
+            <option value="">Select State</option>
+            <option value="MH">Maharashtra</option>
+            <option value="GA">Goa</option>
+            <option value="KN">Karnataka</option>
+        </select>
+        <select name="dist">
+            <option value="0">Select District</option>
+        </select>
+    </form>
+</body>
+</html>

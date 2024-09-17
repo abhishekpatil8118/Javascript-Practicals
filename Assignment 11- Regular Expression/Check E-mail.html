@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Validating E-mail.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript" >
+            function check()
+            {
+                var str = document.forms.myform.mail.value;
+                reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(reg.test(str))
+                {
+                    alert("Valid Email");
+                }
+                else
+                {
+                    alert("Invalid Email");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Validating E-mail using regular expression.</h1>
+        <form name="myform">
+            Enter E-mail: <input type="text" name="mail" value=""><br>
+            <input type="button" onclick="check()" value="Check">
+        </form>
+    </body>
+</html>

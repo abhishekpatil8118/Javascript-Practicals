@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Intrinsic Functions</title>
+        <style>
+            h2{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                margin-right: 300px;
+                margin-left: 300px;
+            }
+            .form-box{
+                   padding: 10px 100px 50px 100px;
+                   background-color: #f2f2f2;
+                   border: 2px solid black;
+                   border-radius: 10px  ;
+            }
+            input{
+                border-radius: 4px;
+                padding: 8px;
+                border: 1px solid black;  
+                width: 350px;
+            }
+            button{
+                background-color: #0fc300; 
+                color: white; 
+                padding: 5px 20px 5px 20px; 
+                border-radius: 5px;
+            }
+            td{
+                width: 250px;
+                height: 80px;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body><br><br><br><br><br>
+        <div class="box">
+            <form name="form1" class="form-box" action="xyz.php">
+                <table>
+                    <th><h2>Login</h2></th>
+                    <tr>
+                        <td><label>E-mail:  </label></td>
+                        <td><input placeholder="abc123@gmail.com" type="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password: </label></td>
+                        <td><input  type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="submit.jpg" width="100" height="40" alt="submit" onclick="javascript: document.forms.form1.submit()"/></td>
+                        <td><img src="reset.jpg" width="130" height="60" alt="submit" onclick="javascript: document.forms.form1.reset()"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

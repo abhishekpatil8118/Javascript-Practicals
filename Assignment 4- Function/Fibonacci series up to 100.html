@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Fibonacci series up to 100</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+        <script language="javascript">
+            function fibo()
+            {
+                var p=0,q=1,r=0;
+                for(var i=0;r<101;i++)
+                {
+                    document.write(r+"<br>");
+                    p=q;
+                    q=r;
+                    r=p+q;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Printing Fibonacci series upto 100 using function.</h1>
+        <div class="box">
+            <script language="javascript" >
+                fibo();
+            </script>
+        </div>
+    </body>
+</html>

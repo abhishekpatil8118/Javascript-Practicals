@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Validate Registration Form.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                margin-right: 300px;
+                margin-left: 300px;
+            }
+            .form-box{
+                   padding: 10px 100px 50px 100px;
+                   background-color: #f2f2f2;
+                   border: 2px solid black;
+                   border-radius: 10px  ;
+            }
+            input{
+                border-radius: 4px;
+                padding: 8px;
+                border: 1px solid black;    
+                background-color: #3366ff;
+                color: white;
+                width: 350px;
+            }
+            textarea{
+                border-radius: 4px;
+                padding: 8px;
+                border: 1px solid black;    
+                background-color: #3366ff;
+                color: white;
+                width: 350px;
+            }
+            ::placeholder{
+                color: seashell;
+            }
+            button{
+                background-color: #0fc300; 
+                color: white; 
+                padding: 5px 20px 5px 20px; 
+                border-radius: 5px;
+            }
+            td{
+                width: 250px;
+                height: 80px;
+            }
+            label{
+                font-weight: bold;
+            }
+            body{
+                background-image: url(main.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            .bg-image{
+                height: 764px;
+                width: 1000px;
+            }
+        </style>
+        <script language="javascript">
+            function checkName()
+            {
+                str=document.forms.myform.name.value;
+                reg=/[^a-z]/i;
+                if(reg.test(str))
+                {
+                    document.forms.myform.name.style='background-color:red;';
+                }
+                else
+                {
+                    document.forms.myform.name.style='background-color:green;';
+                }
+            }
+            function checkLName()
+            {
+                str=document.forms.myform.lname.value;
+                reg=/[^a-z]/i;
+                if(reg.test(str))
+                {
+                    document.forms.myform.lname.style='background-color:red;';
+                }
+                else
+                {
+                    document.forms.myform.lname.style='background-color:green;';
+                }
+            }
+            function checkMail()
+            {
+                str=document.forms.myform.mail.value;
+                reg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(!reg.test(str))
+                {
+                    document.forms.myform.mail.style='background-color:red;';
+                }
+                else
+                {
+                    document.forms.myform.mail.style='background-color:green;';
+                }
+            }
+            function checkPass()
+            {
+                document.forms.myform.pass.style='background-color:green;';
+            }
+            function checkNum()
+            {
+                str=document.forms.myform.num.value;
+                reg=/[^0-9]/;
+                    if(reg.test(str) && str.length==10)
+                    {
+                        document.forms.myform.num.style='background-color:red;';
+                    }
+                    else
+                    {
+                        document.forms.myform.num.style='background-color:green;';
+                    }
+            }
+        </script>
+    </head>
+    <body style="background-image: url(main.jpg); width:1300px; height:700px;">
+        <h1>Sign Up</h1>
+        <div class="box">
+            <form class="form-box" name="myform">
+                <table>
+                    <tr>
+                        <td><label>First Name:  </label></td>
+                        <td><input type="text" name="name" onblur="checkName()"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name:  </label></td>
+                        <td><input name="lname" type="text" onblur="checkLName()"></td>
+                    </tr>
+                    <tr>
+                        <td><label>E-mail:  </label></td>
+                        <td><input name="mail" type="text" onblur="checkMail()"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:  </label></td>
+                        <td><input type="text" name="pass" onblur="checkPass()"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Mobile Number:  </label></td>
+                        <td><input type="text" name="num" onblur="checkNum()"></td>
+                    </tr>
+                </table>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </body>
+</html>

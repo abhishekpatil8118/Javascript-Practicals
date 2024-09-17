@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Operations on Array.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Various operations on Array</h1>
+        <div class="box">
+            <script language="javascript">
+                var num = new Array;
+                
+                num = [98,56,37,19,76,50];
+                document.write("Array Elements: <br>");
+                for(var i=0;i<6;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                num.push(53);
+                document.write("Array elements after push(53): <br>");
+                for(i=0;i<7;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                num.unshift(99);
+                document.write("Array elements after unshift(99): <br>");
+                for(i=0;i<8;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                num.sort();
+                document.write("Array elements after sorting: <br>");
+                for(i=0;i<8;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                num.reverse();
+                document.write("Array elements after reversing: <br>");
+                for(i=0;i<8;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                num.shift();
+                document.write("Array elements after shift() method: <br>");
+                for(i=0;i<7;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                num.pop();
+                document.write("Array elements after pop() method: <br>");
+                for(i=0;i<6;i++)
+                {
+                    document.write(+num[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                var sli = num.slice(2,5);
+                document.write("Array elements after slice() method: <br>");
+                for(i=0;i<3;i++)
+                {
+                    document.write(+sli[i]+"<br>");
+                }
+                document.write("<hr>");
+                
+                document.write("Total elements in array = "+num.length+"<hr>");
+                
+                document.write("Elements in array: "+num.concat()+"<hr>");
+                
+                document.write("Elements in array: "+num.join("|")+"<hr>");
+            </script>
+        </div>
+    </body>
+</html>

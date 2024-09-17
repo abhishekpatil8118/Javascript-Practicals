@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Create and close window.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript">
+            function Open()
+            {
+              obj = window.open("","","width=500,height=400");
+            }
+            function Close()
+            {
+                obj.close();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Creating and closing window.</h1>
+        <b>Click here to open new window --></b> <input type="button" value="Open()" onclick="Open()"><br><br>
+        <b>Click here to close window --></b> <input type="button" value="Close()" onclick="Close()">
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Properties of window and document object.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Properties of window and document object</h1>
+        <div class="box">
+            <script language="javascript" >
+                var win_property;
+                var doc_property;
+                document.write("Window Properties: "+ "<br><br><br>");
+                for(win_property in window)
+                {
+                    document.write(win_property + ": " + window[win_property]+"<hr>");
+                }
+                
+                document.write("<br><br><br>");
+                document.write("Document Properties: "+ "<br><br><br>");
+                for(doc_property in window)
+                {
+                    document.write(doc_property + ": " + window[doc_property]+"<hr>");
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>

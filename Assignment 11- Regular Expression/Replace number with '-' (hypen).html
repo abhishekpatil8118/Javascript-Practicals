@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Replace number with hyphen.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript">
+            function replace()
+            {
+                str1=document.forms.myform.string.value;
+                reg=/[0-9]/g;
+                alert(str1.replace(reg,'-'));   
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Replacing number with hyphen in given string.</h1>
+        <form name="myform">
+            Enter String: <input type="text" name="string"><br>
+            <input type="button" value="Replace" onclick="replace()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Checking Hex code.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript" >
+            function check()
+            {
+                str=document.forms.myform.colname.value;
+                if(str.length==7)
+                {
+                    reg=/^#[0-9 a-f]/;
+                    if(reg.test(str))
+                    {
+                    alert("You entered correct hex code.");
+                    }
+                    else
+                    {
+                        alert("You entered incorrect hex code");
+                    }
+                }
+                else
+                {
+                    alert("You entered incorrect hex code");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Checking entered code is hex code or not.</h1>
+        <form name="myform">
+            Enter Hex Color: <input type="text" name="colname"><br>
+            <input type="button" onclick="check()" value="Check">
+        </form>
+    </body>
+</html>

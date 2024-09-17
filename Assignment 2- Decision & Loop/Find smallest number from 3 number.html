@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Finding smallest number </title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Find smallest number from given three number</h1>
+        <div class="box">
+            <script language="javascript" >
+                var a,b,c;
+                a = window.prompt("Enter First Number");
+                b = window.prompt("Enter Second Number");
+                c = window.prompt("Enter Third Number");
+                
+                a= parseInt(a);
+                b= parseInt(b);
+                c= parseInt(c);
+                
+                if(a<b && a<c)
+                {
+                    alert("First Number "+a+" is small.");
+                }
+                else if(b<a && b<c)
+                {
+                    alert("Second Number "+b+" is small.");
+                }
+                else
+                {
+                    alert("Third Number "+c+" is small.");
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Form Events.</title>
+        <style>
+            h2{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                margin-right: 300px;
+                margin-left: 300px;
+            }
+            .form-box{
+                   padding: 10px 100px 50px 100px;
+                   background-color: #f2f2f2;
+                   border: 2px solid black;
+                   border-radius: 10px  ;
+            }
+            input{
+                border-radius: 4px;
+                padding: 8px;
+                border: 1px solid black;  
+                width: 350px;
+            }
+            button{
+                background-color: #0fc300; 
+                color: white; 
+                padding: 5px 20px 5px 20px; 
+                border-radius: 5px;
+            }
+            td{
+                width: 250px;
+                height: 80px;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+        <script language="javascript">
+            function col(ele)
+            {
+                ele.style = 'background-color: cyan;';
+                //ele.style = 'background-color: blue;';
+            }
+            function blu(a)
+            {
+                a.style = 'background-color: white;';
+                //a.style = 'background-color: white;';
+            }
+        </script>
+    </head>
+    <body>
+        <br><br><br><br><br>
+        
+        <div class="box">
+            <form class="form-box">
+                <table>
+                    <th><h2>Demonstrating Form Events.</h2></th>
+                    <tr>
+                        <td><label>E-mail: </label></td>
+                        <td><input placeholder="abc123@gmail.com" type="email" name="mail" onfocus="col(this)" onblur="blu(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password: </label></td>
+                        <td><input placeholder="1234567890" type="password" name="pass" onfocus="col(this)" onblur="blu(this)"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

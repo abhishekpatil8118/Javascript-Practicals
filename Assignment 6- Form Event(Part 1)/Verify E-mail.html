@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Verify E-mail.</title>
+        <style>
+            h2{
+                color: blue; 
+                text-align:  center;
+                font-size: 30px;
+            }
+            .box{
+                margin-right: 300px;
+                margin-left: 300px;
+            }
+            .form-box{
+                   padding: 10px 100px 50px 100px;
+                   background-color: #f2f2f2;
+                   border: 2px solid black;
+                   border-radius: 10px  ;
+            }
+            input{
+                border-radius: 5px;
+                padding: 8px;
+                border: 1px solid black;  
+                width: 350px;
+            }
+            .l1{
+                background-color: #0fc300; 
+                color: white; 
+                padding: 5px 20px 5px 20px;
+                border-radius: 5px;
+            }
+            td{
+                width: 250px;
+                height: 80px;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+        <script language="javascript">
+            function check()
+            {
+                var mail = window.document.forms.form1.email.value;
+                var num = mail.indexOf('@');
+                if(num<0)
+                {
+                    window.document.forms.form1.email.style.backgroundColor='red';
+                    alert("You have entered wrong E-mail.");
+                }
+                else
+                {
+                    window.document.forms.form1.email.style.backgroundColor='green';
+                    alert("You have entered Correct E-mail.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <br><br><br><br><br>
+        <div class="box">
+            <form class="form-box" name="form1" target="_self">
+                <center><h2>Verify E-mail.</h2></center>
+                <table>
+                    <tr>
+                        <td><label>E-mail:  </label></td>
+                        <td><input placeholder="abhi123@gmail.com" type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><input style=" width: 100px" class="l1" type="button" onclick="check()" value="Verify"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

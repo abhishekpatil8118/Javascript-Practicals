@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Prime Numbers</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Check whether entered number is prime or not</h1>
+        <div class="box">
+            <script language="javascript" >
+                var num,i,flag=0;
+                num = window.prompt("Enter Number");
+                
+                for(i=2;i<num;i++)
+                {
+                    if(num%i==0)
+                    {
+                        flag=1;
+                        break;
+                    }
+                }
+                if(num==1)
+                {
+                    document.write("1 is neither prime nor composite.");
+                }
+                else
+                {
+                    if(flag==1)
+                        document.write(num+" is a not prime number.");
+                    else
+                        document.write(num+" is a prime number.");
+                }
+            </script>
+        </div>
+    </body>
+</html>

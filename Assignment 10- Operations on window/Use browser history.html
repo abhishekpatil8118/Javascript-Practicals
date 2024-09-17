@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Use browser history.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript">
+            function previous()
+            {
+                window.history.back();
+            }
+            function next()
+            {
+                window.history.forward();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Demonstrating use history of browser.</h1>
+        <input type="button" value="<-- Previous" onclick="previous()">
+        <input type="button" value="Next -->" onclick="next()">
+    </body>
+</html>

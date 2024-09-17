@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Evaluating checkbox selection</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+        <script language="javascript">
+            var str1 = 'You Selected: ';
+            function fun2()
+            {
+                with(window.document.forms.form1)
+                {
+                    if(HS.checked==true)
+                    {
+                        str1 = str1 + ' High School, ';
+                    }
+                    if(AD.checked==true)
+                    {
+                        str1 = str1 + 'Associate Degree, ';
+                    }
+                    if(BD.checked==true)
+                    {
+                        str1 = str1 + 'Bachelor Degree, ';
+                    }
+                    if(MD.checked==true)
+                    {
+                        str1 = str1 + 'Masters Degree, ';
+                    }
+                    if(DD.checked==true)
+                    {
+                        str1 = str1 + 'Doctorate Degree.';
+                    }
+                }
+                alert(str1);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Evaluating checkbox selection.</h1><hr>
+        <form name="form1">
+            <input type="checkbox" name="HS">High School<br>
+            <input type="checkbox" name="AD">Associate Degree<br>
+            <input type="checkbox" name="BD">Bachelor Degree<br>
+            <input type="checkbox" name="MD">Masters Degree<br>
+            <input type="checkbox" name="DD">Doctorate Degree<br><br>
+            <input type="button" value="Submit" onclick="fun2()">
+        </form>
+    </body>
+</html>

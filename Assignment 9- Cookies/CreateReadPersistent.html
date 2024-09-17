@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Persistent Cookie</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript">
+            function create()
+            {
+                var current = new Date();
+                current.setMonth(current.getMonth()+3);
+                document.cookie = "username="+key.value+"; expires="+current.toUTCString();
+                alert("Cookie created.");
+            }
+            function view()
+            {
+                alert("Cookie--> "+document.cookie);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Create, read persistent Cookie.</h1>
+        Username: <input type="text" id="key" value="">
+        <input type="button" value="Create" onclick="create()">
+        <input type="button" value="View Cookie" onclick="view()">
+    </body>
+</html>

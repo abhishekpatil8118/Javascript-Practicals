@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Change option list dynamically</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript" >
+            function fun1(ele)
+            {
+                with(window.document.forms.form1)
+                {
+                    if(ele==1)
+                    {
+                        combo[0].text = 'Vivo';
+                        combo[1].text = 'Oppo';
+                        combo[2].text = 'Samsung';
+                        combo[3].text = 'Realme';
+                    }
+                    else
+                    {
+                        combo[0].text = 'Dell';
+                        combo[1].text = 'HP';
+                        combo[2].text = 'Asus';
+                        combo[3].text = 'Apple';
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Changing option list dynamically.</h1><hr>
+        <form name="form1">
+            <input type="radio" name="r1" value="1" onclick="fun1(this.value)">Mobiles
+            <input type="radio" name="r1" value="2" onclick="fun1(this.value)">Laptops<br><br>
+            <select name="combo">
+                <option>Vivo</option>
+                <option>Oppo</option>
+                <option>Samsung</option>
+                <option>Realme</option>
+            </select>
+        </form>
+    </body>
+</html>

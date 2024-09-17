@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Rollover on Text.</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+        </style>
+        <script language="javascript">
+            function fun1()
+            {
+                document.img.src="Parrot.jpg";
+            }
+            function fun2()
+            {
+                document.img.src="Bird.jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Rollover on Text.</h1>
+        <img src="" alt="Parrot" width="300" height="400" name="img"/><br><br><br>
+        <p onmouseover="fun1()">
+            Show Parrot Image.
+        </p><br><br>
+        <p onmouseover="fun2()">
+            Show King Fisher Image.
+        </p>
+    </body>
+</html>

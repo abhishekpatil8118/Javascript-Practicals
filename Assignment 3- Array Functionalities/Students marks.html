@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Student marks</title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Printing top 3 student from array of 10 student.</h1>
+        <div class="box">
+            <script language="javascript" >
+                var stu = new Array();
+                for(var i=0,j=1;i<10;i++,j++)
+                {
+                    stu[i] = window.prompt("Enter marks of student "+j);
+                }
+                for(i=0; i<10;i++)
+                {
+                    document.write(stu[i]+"<br>");
+                }
+                document.write("<hr>");
+               
+                stu.sort(function(a,b){return a-b;});
+                stu.reverse();
+                
+                for(i=0,j=1;i<3;i++,j++)
+                {
+                    document.write("Topper number "+j+" is "+stu[i]+"<br>");
+                }
+            </script>
+        </div>
+    </body>
+</html>

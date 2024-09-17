@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Consonant or vowel </title>
+        <style>
+            h1{
+                color: blue; 
+                text-align:  center;
+            }
+            .box{
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Check whether entered character is consonant or vowel.</h1>
+        <div class="box">
+            <script language="javascript" >
+                var c;
+                c = window.prompt("Enter One Character");
+                
+                switch(c)
+                {
+                    case "a" : 
+                    case "A" :
+                    case "e" : 
+                    case "E" :
+                    case "i" : 
+                    case "I" :
+                    case "o" : 
+                    case "O" :
+                    case "u" : 
+                    case "U" :
+                            document.write(c+" is a Vowel.");
+                            break;
+                            
+                    default:
+                           document.write(c+" is a consonant.");
+                }
+            </script>
+        </div>
+    </body>
+</html>
